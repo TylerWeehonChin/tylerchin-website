@@ -50,7 +50,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/2 text-right">
             <h3 className="text-2xl font-semibold mb-2">Skills</h3>
             <p className="text-lg">
-            I have strong proficiency in object-oriented programming using Java, Python, C, and C#. I have practical experience in test automation and QA using tools like Selenium, along with a solid understanding of API integration and back-end services like MongoDB. I’m also skilled in using tools like GitHub, Asana, and Discord to collaborate in agile teams and deliver scalable, high-quality software.
+            {"I have strong proficiency in object-oriented programming using Java, Python, C, and C#. I have practical experience in test automation and QA using tools like Selenium, along with a solid understanding of API integration and back-end services like MongoDB. I’m also skilled in using tools like GitHub, Asana, and Discord to collaborate in agile teams and deliver scalable, high-quality software."}
             </p>
           </div>
         </motion.div>
@@ -67,7 +67,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/2 text-left">
             <h3 className="text-2xl font-semibold mb-2">Hobbies</h3>
             <p className="text-lg">
-              Outside of tech, I’m passionate about sports—both playing and watching hockey, basketball, soccer, and volleyball. I love exploring stories through movies, shows, anime, books, and manga, and I’m always up for gaming with friends. I'm also a big foodie with a soft spot for bubble tea, ramen, tacos, and poutine.
+              {"Outside of tech, I’m passionate about sports—both playing and watching hockey, basketball, soccer, and volleyball. I love exploring stories through movies, shows, anime, books, and manga, and I’m always up for gaming with friends. I'm also a big foodie with a soft spot for bubble tea, ramen, tacos, and poutine."}
             </p>
           </div>
         </motion.div>
