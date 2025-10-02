@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Pokémon Quiz",
     description: "A Pokémon Quiz built with Next.js, React and CSS.",
-    link: "https://github.com/TylerWeehonChin/pokemon-quiz",
+    link: "https://tylerchin-pokemon-website.vercel.app/",
   },
   {
     title: "Project #2",
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-sm flex-grow">{project.description}</p>
             <div className="flex items-center mt-4 text-[#3E3F5B] hover:text-[#ACD3A8]">
-              <FaGithub className="mr-2" /> View on GitHub
+              <FaGithub className="mr-2" /> View here
             </div>
           </motion.a>
         ))}

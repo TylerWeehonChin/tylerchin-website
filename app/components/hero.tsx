@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Profile Image */}
       <div className="w-50 h-50 mb-6 relative">
         <Image
-          src="/Me.jpg" 
+          src="/Me.png" 
           alt="Tyler Chin"
           fill
           className="rounded-full object-cover shadow-lg"
