@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaCode, FaCss3Alt, FaJs, FaPython, FaJava } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 import { useState } from 'react';
 import Pokeball from './icons/Pokeball';
 

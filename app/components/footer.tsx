@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPaperPlane, FaHeart } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const handleEmailClick = () => {
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4 text-[#3E3F5B]">Get In Touch</h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#3E3F5B] opacity-80 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto px-2 sm:px-0">
-            I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development.
+            I&apos;m always open to discussing new opportunities, collaborations, or just having a chat about technology and development.
           </p>
         </motion.div>
 
