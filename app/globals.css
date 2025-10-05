@@ -1,3 +1,172 @@
 @import "tailwindcss";
 
+/* ============================================
+   Color Palette Variables
+   ============================================ */
+:root {
+  --primary-bg: #F6F1DE;
+  --secondary-bg: #ACD3A8;
+  --accent-bg: #8AB2A6;
+  --header-bg: #3E3F5B;
+  --text-primary: #3E3F5B;
+  --text-accent: #8AB2A6;
+  --text-hover: #ACD3A8;
+}
 
+/* ============================================
+   Base Styles
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   Custom Animations & Keyframes
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   Animation Utility Classes
+   ============================================ */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+/* ============================================
+   Scroll Animation Classes
+   ============================================ */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-animate-title {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate-title.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   Layout & Container Classes
+   ============================================ */
+.section-container {
+  @apply min-h-screen flex flex-col;
+}
+
+.content-box {
+  @apply bg-[#F6F1DE] text-[#3E3F5B] rounded-2xl shadow-lg p-6;
+}
+
+.project-card {
+  @apply bg-[#F6F1DE] text-[#3E3F5B] rounded-2xl shadow-lg p-6 flex flex-col justify-between;
+}
+
+/* ============================================
+   Typography Classes
+   ============================================ */
+.section-title {
+  @apply text-4xl font-bold text-[#3E3F5B] text-center mb-12;
+}
+
+.section-heading {
+  @apply text-2xl font-semibold mb-2;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl font-bold mb-4;
+}
+
+.hero-subtitle {
+  @apply text-lg md:text-xl max-w-xl;
+}
+
+/* ============================================
+   Interactive Element Classes
+   ============================================ */
+.hover-lift {
+  @apply transition-transform duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.nav-link {
+  @apply text-[#8AB2A6] hover:text-[#ACD3A8] transition-colors duration-300;
+}
